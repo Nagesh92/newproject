@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <h1>Welcome to Predictions page!</h1>
+    <h2>Please enter the values in the below form</h2>
+
+    <h4> {{ result }}</h4>
+</head>
+<body>
+    <form action="{{url_for('predict')}}" method="post">
+        <div>
+            <label for="age">age:</label>
+            <input type="text" id="age" name="age" placeholder="please enter age values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="sex">sex:</label>
+            <input type="text" id="sex" name="sex" placeholder="please enter 0 or 1">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bmi">bmi:</label>
+            <input type="text" id="bmi" name="bmi" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="children">children:</label>
+            <input type="text" id="children" name="children" placeholder="please enter no of children here">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="smoker">smoker:</label>
+            <input type="text" id="smoker" name="smoker" placeholder="please enter 0 or 1">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="region">region:</label>
+            <input type="text" id="region" name="region" placeholder="please enter values here">
+        </div>
+
+        <br>
+
+        <input type="submit" value="Predict!">
+
+        <br>
+
+    </form>
+</body>
+</html>

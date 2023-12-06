@@ -1,0 +1,6 @@
+Hi!
+The given problem is a regression and predictioon problem
+the Target variable is Insurance charges for which prediction values are needed
+the dependent variables being age, bmi, sex, children, region, smoker
+A simle Linear Regression model is carried out
+Coefficient of Determination being close to 0.78
